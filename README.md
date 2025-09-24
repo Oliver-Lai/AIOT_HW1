@@ -1,5 +1,8 @@
 # AutoDeployLR: Automated Linear Regression Deployment
 
+## 🌐 Live Demo
+**Try the interactive web application:** [https://oliverlai-aiot-hw1.streamlit.app/](https://oliverlai-aiot-hw1.streamlit.app/)
+
 ## Project Overview
 This project implements an automated linear regression system following the CRISP-DM framework. It generates synthetic data using the formula `y = ax + b + noise`, trains a linear regression model, and deploys it through a web interface for interactive use.
 
