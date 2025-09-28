@@ -6,6 +6,26 @@
 ## Project Overview
 This project implements an automated linear regression system following the CRISP-DM framework. It generates synthetic data using the formula `y = ax + b + noise`, trains a linear regression model, and deploys it through a web interface for interactive use.
 
+## Development Log
+* Project initialization started - AutoDeployLR following CRISP-DM framework
+* Step 1 completed: Project structure created with README.md, requirements.txt, src/, logs/
+* Data generation module implemented with adjustable parameters for y=ax+b+noise
+* Linear regression model implemented with sklearn, including train and evaluate functions
+* Streamlit web application created with interactive parameter controls and visualization
+* Utility functions implemented including prompt logging system
+* Comprehensive exploration notebook created with CRISP-DM methodology
+* Import error encountered: Fixed relative imports in app.py for Streamlit deployment
+* Python environment configuration issues detected and addressed
+* Added comprehensive troubleshooting section to README.md
+* User requested GitHub repository creation and upload - AIOT_HW1
+* Prepared .gitignore file for Python project
+* Ready to initialize Git repository and push to GitHub
+* Git repository initialized and files committed locally
+* Ready to add remote origin and push to GitHub AIOT_HW1 repository
+* Successfully uploaded project to GitHub repository: Oliver-Lai/AIOT_HW1
+* Added Demo Site link to README.md: https://oliverlai-aiot-hw1.streamlit.app/
+* Preparing to push updated README with demo link to GitHub
+
 ## CRISP-DM Framework Implementation
 
 ### 1. Business Understanding
@@ -60,62 +80,9 @@ The deployment phase features:
 │   ├── app.py
 │   └── utils.py
 ├── logs/
-│   └── prompts.log
-└── notebooks/
-    └── exploration.ipynb
+│   └── 產生步驟.log
+│   └── prompts.md
 ```
-
-## Usage Instructions
-
-### Option 1: Full Web Application (Recommended)
-1. **Install dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
-   
-2. **Run the Streamlit web application:**
-   ```bash
-   streamlit run src/app.py
-   ```
-   
-3. **Use the web interface:**
-   - Adjust parameters in the sidebar (slope, intercept, noise, etc.)
-   - Click "Generate Data & Train Model" to see results
-   - View interactive visualizations and metrics
-
-### Option 2: Simple Demo (If dependencies fail)
-If you encounter import errors, run the simplified demo:
-```bash
-python simple_demo.py
-```
-
-### Option 3: Jupyter Notebook
-Explore the complete analysis in the notebook:
-```bash
-jupyter notebook notebooks/exploration.ipynb
-```
-
-## Troubleshooting
-
-### Import Errors
-If you get import errors when running the Streamlit app:
-
-1. **Make sure you're running from the project root directory**
-2. **Check Python environment:** Ensure all packages are installed in the correct environment
-3. **Try the simple demo:** Run `python simple_demo.py` for a basic version
-4. **Manual installation:** Install packages individually:
-   ```bash
-   pip install streamlit
-   pip install scikit-learn
-   pip install matplotlib
-   pip install numpy pandas plotly
-   ```
-
-### Python Environment Issues
-- If using conda: `conda install streamlit scikit-learn matplotlib numpy pandas plotly`
-- If using virtual environment: Activate it first, then install packages
-- Check Python version: Requires Python 3.7+
-
 ## Features
 - Interactive parameter adjustment for data generation
 - Real-time model training and evaluation
@@ -124,4 +91,4 @@ If you get import errors when running the Streamlit app:
 - CRISP-DM compliant project structure
 
 ## Development
-This project tracks all development prompts in `logs/prompts.log` for reproducibility and documentation purposes.
+This project tracks all development prompts in `logs/產生步驟.log` for reproducibility and documentation purposes.
